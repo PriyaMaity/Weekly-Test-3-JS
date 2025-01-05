@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-box{
+  border: 4px solid gray;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 8px 20px;
+  width: 380px;
+  border-radius: 3px;
+  height: 50vh;
+  overflow-y: auto;
+}
+.cart-box{
+  border: 4px solid rgb(167, 165, 165);
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 8px 20px;
+  width: 300px;
+  border-radius: 3px;
+  height: 50vh;
+}
+h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.products{
+  display: flex;
+  gap: 10px;
+}
+#product-1, #product-2, #product-3{
+  border: 1px solid gray;
+  background-color: #979595;
+  color: white;
+  border-radius: 2px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.product, .cart-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cart-items{
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.button{
+  background-color: rgb(30, 131, 175);
+  color: white;
+  border: 1px solid black;
+  padding: 3px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button button{
+  background-color: rgb(30, 131, 175);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 2rem;
+}
+.button span{
+  margin: 5px;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+.items{
+  height: 26vh;
+  margin-bottom: 10px;
+}
+.total {
+  width: 100%;
+  /* margin-bottom: 0px; */
+  font-size: 18px;
+  background-color: #979595;
+  border: 1px solid gray;
+  color: white;
+  padding: 5px 2px;
+  border-radius: 2px;
+}
+.total span{
+  margin-left: 9.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 2rem;
+  }
+
+  .total span {
+    margin-left: 14.2rem;
+  }
+
+  .cart-items span {
+    font-size: 0.9rem; 
+  }
+
+  .button {
+    flex-direction: row;
+  }
+
+  .button span {
+    margin: 2px;
+  }
+
+  .product span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 468px) {
+  body {
+    margin-top: 2rem;
+  }
+
+  .container {
+    width: 90%;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .product-box,
+  .cart-box {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .total span {
+    margin-left: 12.5rem;
+  }
+
+  .cart-items span {
+    font-size: 0.9rem; 
+  }
+
+  .button {
+    flex-direction: row;
+  }
+
+  .button span {
+    margin: 2px;
+  }
+
+  .product {
+    flex-wrap: wrap;
+  }
+
+  .product span {
+    font-size: 0.9rem;
+  }
+}
