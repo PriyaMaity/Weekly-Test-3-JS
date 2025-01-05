@@ -145,7 +145,7 @@ button:disabled {
   .product-box,
   .cart-box {
     width: 100%; 
-    height: auto; 
+    
   }
 
   .total span {
